@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{% extends 'flatpages/default.html' %}</title>
+</head>
+<body>
+    {% block title %}
+        {{ flatpage.title }}
+    {% endblock title %}
+
+    {% block content %}
+        {{ flatpage.content }}
+    <hr>
+        {{ flatpage.content }}
+    {% endblock content %}
+</body>
+</html>
+<!-- берём шапку и стиль и "деволт" и выводим на печать отдел "контент" дважды разделяя полоской-->
